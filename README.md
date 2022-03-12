@@ -14,5 +14,5 @@ Install the `npm` packages described in the `package.json` and verify that it wo
 ```shell
 npm install
 
-### run
 ng serve
+```
