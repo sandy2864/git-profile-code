@@ -16,3 +16,6 @@ npm install
 
 ng serve
 ```
+
+
+![1](1.png)
