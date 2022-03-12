@@ -14,20 +14,12 @@
                 <span *ngIf="profile.blog">Blog : {{ profile.blog }}</span>
             </div>
         </div>
-        <div class="repo">
-            <div class="panel-body okbye" *ngFor="let repo of repos | paginate:{id:'listing_pagination',itemsPerPage:6,currentPage:page,totalItems:totalRec}">
-                <h6 class=" name ">{{ repo.name }}</h6>
-                <br />
-                <small>{{ repo.description }}</small><br /><br />
-                <button class="btn btn-success " *ngIf="repo.language ">
-          {{ repo.language }}
-        </button>
-            </div>
-            <div class="page">
-                <pagination-controls previousLabel="Older" nextLabel="Newer" id="listing_pagination" (pageChange)="page=$event">
-                </pagination-controls>
 
-            </div>
+        <app-repo class="repo" [repos]="repos" [page]="page" [totalRec]="totalRec"></app-repo>
+        <div class="page">
+            <pagination-controls previousLabel="Older" nextLabel="Newer" id="listing_pagination" (pageChange)="page=$event">
+            </pagination-controls>
         </div>
+
     </div>
 </div>

@@ -1,0 +1,8 @@
+<div class="panel-body okbye" *ngFor="let repo of repos | paginate:{id:'listing_pagination',itemsPerPage:6,currentPage:page,totalItems:totalRec}">
+    <h6 class=" name ">{{ repo.name }}</h6>
+    <br />
+    <small>{{ repo.description }}</small><br /><br />
+    <button class="btn btn-success " *ngIf="repo.language ">
+    {{ repo.language }}
+  </button>
+</div>

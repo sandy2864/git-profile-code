@@ -29,10 +29,6 @@
     font-weight: 450;
 }
 
-.name {
-    color: #2985cf;
-}
-
 .btn {
     background-color: #2985cf;
     /* Green */
@@ -51,18 +47,12 @@
     margin: 2vw 12vw 6vw;
 }
 
-.okbye {
-    width: 32%;
-    /* height: 200px; */
-    border: 2px solid;
-    padding: 10px;
-}
-
 h6 {
     font-size: medium;
+    font-weight: 500;
 }
 
 .page {
-    margin-left: 28%;
-    margin-top: 2%;
+    display: flex;
+    justify-content: center;
 }

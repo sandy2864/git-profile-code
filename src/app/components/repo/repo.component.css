@@ -1,0 +1,21 @@
+.okbye {
+    width: 32%;
+    /* height: 200px; */
+    border: 2px solid;
+    padding: 10px;
+}
+
+.name {
+    color: #2985cf;
+}
+
+.btn {
+    background-color: #2985cf;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+}
