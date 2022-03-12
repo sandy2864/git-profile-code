@@ -1,0 +1,68 @@
+.photo {
+    border-radius: 100% !important;
+    width: 80% !important;
+    height: auto;
+    display: inline;
+    margin-left: 50%;
+}
+
+.float-child {
+    width: 20%;
+    padding-top: 3%;
+    padding-left: 8%;
+}
+
+.panel-heading {
+    display: flex;
+}
+
+.child2 {
+    width: 40% !important;
+    margin-top: 0.5%;
+    margin-left: 3%;
+}
+
+.sk {
+    font-size: 15px;
+    margin-top: 15%;
+    margin-left: 30%;
+    font-weight: 450;
+}
+
+.name {
+    color: #2985cf;
+}
+
+.btn {
+    background-color: #2985cf;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.repo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 2vw 12vw 6vw;
+}
+
+.okbye {
+    width: 32%;
+    /* height: 200px; */
+    border: 2px solid;
+    padding: 10px;
+}
+
+h6 {
+    font-size: medium;
+}
+
+.page {
+    margin-left: 28%;
+    margin-top: 2%;
+}

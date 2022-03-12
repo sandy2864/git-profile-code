@@ -1,0 +1,33 @@
+<div *ngIf="profile" class="main">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="float-child child1">
+                <img class="photo" src="{{ profile.avatar_url }} " alt="image " />
+                <div>
+                    <span class="sk">{{ profile.url }}</span>
+                </div>
+            </div>
+            <div class="float-child child2">
+                <h6>{{ profile.name }}</h6>
+                <span>{{ profile.bio }}</span><br />
+                <span><i class="fa fa-map-marker"></i> {{ profile.location }} </span><br />
+                <span *ngIf="profile.blog">Blog : {{ profile.blog }}</span>
+            </div>
+        </div>
+        <div class="repo">
+            <div class="panel-body okbye" *ngFor="let repo of repos | paginate:{id:'listing_pagination',itemsPerPage:6,currentPage:page,totalItems:totalRec}">
+                <h6 class=" name ">{{ repo.name }}</h6>
+                <br />
+                <small>{{ repo.description }}</small><br /><br />
+                <button class="btn btn-success " *ngIf="repo.language ">
+          {{ repo.language }}
+        </button>
+            </div>
+            <div class="page">
+                <pagination-controls previousLabel="Older" nextLabel="Newer" id="listing_pagination" (pageChange)="page=$event">
+                </pagination-controls>
+
+            </div>
+        </div>
+    </div>
+</div>
